@@ -1,0 +1,9 @@
+Photo by Erik Witsoe on Unsplash
+Lamp - Unsplash
+https://unsplash.com/photos/XFkWLJQj22A
+
+Google Fonts
+Roboto: light 300
+Lato: regular 400
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300" rel="stylesheet">
+https://fonts.google.com/specimen/Roboto?selection.family=Lato|Roboto:300
