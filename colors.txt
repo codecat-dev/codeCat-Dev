@@ -1,0 +1,10 @@
+COLORS:
+
+off-white: #EFFFFC
+off-black: #04080B
+deep-red-purple: #982E45
+deep-blue: #131931
+
+optional:
+matte-darkish-red: #AF4E48
+matte-light-red: #F14543

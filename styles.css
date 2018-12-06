@@ -1,4 +1,6 @@
-/********************************************* GLOBAL STYLES****************/
+/* Global Layout Set-up */
+
+
 * { 
     box-sizing: border-box;
 }
@@ -8,24 +10,30 @@ body {
     padding: 0;
     text-align: center;  
     font-family: 'Roboto', sans-serif;
-    color: #222;
-    background: #f7f5f0;
+    color: #04080B;
+    background:  #EFFFFC;
 }
+
+
 /* Link Styles */
 
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     color: #6633ff;
 }
 
-.clearfix {
-    clear: both;
+.emphasis{
+
+    color: #131931;
+    font-weight: 600;
+
 }
 
-/********************************************* NAV CLASS STYLING ****************/
+/* Section Styles */
 
 .main-nav {
     width: 100%;
@@ -33,8 +41,8 @@ a:hover {
     min-height: 30px;
     padding: 10px;
     position: fixed;
-    text-align: right;;
-    }
+    text-align: right;
+}
 
 .nav {
     float: right;
@@ -46,30 +54,28 @@ a:hover {
     margin-right: auto;
     color: white;
 }
-
 .nav li {
     padding: 5px 10px 10px 10px;
     display: inline;
-    }
+}
 .nav a {
     transition: all .5s;
 }
-.nav a:hover {
+    .nav a:hover {
     color: white
 }
 
-/********************************************* HEADER STYLING ****************/
+/***************** HEADER STYLING ******************/
 
 header {
     background: url('images/rsz_lamp_unsplash_cropped.jpg') no-repeat top center ;
     background-size: cover;
-    overflow: hidden;
+    overflow: none;
     padding-top: 60px;
 }
 
-
-header h1{
-    margin: 0px;
+.header-content{
+    padding-left: 40px;
 }
 
 header {
@@ -81,12 +87,9 @@ header .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #EFFFFC;
     transition: all .5s;
-}
 
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
 }
 
 .flex-header {
@@ -97,47 +100,49 @@ header .profile-image:hover {
     max-width: 625px;
 }
 
-.header-content{
-    padding-left: 40px;
+#helloWorld{
+    margin-top: 90px;
 }
 
-.tag {
-    background-color: #efefef;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
+
+.tag, .location {
+    color: #EFFFFC;
     display: table;
 } 
 
+.tag{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
 .location {
-    background-color: #222;
-    color: yellow;
+    background-color: #04080B;
+    color: #EFFFFC;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
 }
 
-
-#helloWorld{
-    margin-top: 85px;
+header h1{
+    margin: 0px;
 }
 
-
-/********************************************* CARD CLASS STYLING ****************/
 
 .card {
     margin: 30px;
     padding: 20px 40px 40px;
     max-width: 500px;
     text-align: left;
-    background: #fff;
-    border-bottom: 4px solid #ccc;
+    background: #EFFFFC;
+    border-top: 4px solid #131931;
+    border-bottom: 4px solid #131931;
     border-radius: 6px;
     transition: all .5s;
 }
 
 .card:hover {
-    border-color: #ff99ff;
+    border-color: #982E45;
 }
-
-/********************************************* SKILLS CLASS STYLING ****************/
 
 ul.skills {
     padding: 0;
@@ -147,17 +152,15 @@ ul.skills {
 .skills li {
     border-radius: 6px;
     display: inline-block;
-    background: #ff9904;
+    background: #131931;
     color: white;
     padding: 5px 10px;
     margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-    background: #0399ff;
+    background: #982E45;
 }
-
-/********************************************* FOOTER STYLING ****************/
 
 footer {
     width: 100%;
@@ -180,45 +183,45 @@ footer ul li {
     display: inline-block;
 }
 
+/**----------------------------------- SOCIAL STYLES -------------------- **/
+
 a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .4;
-    transition: all .5s;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
 }
-
 a.twitter {
-    background-image: url(images/twitter.svg);
-}
-
-a.linkedin {
-    background-image: url(images/linkedin.svg);
+  background-image: url(images/twitter.svg);
 }
 
 a.github {
-    background-image: url(images/github.svg);
+  background-image: url(images/github.svg);
 }
-
 a.social:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 
-/********************************************* @MEDIA STYLING - RESPONSIVE DESIGN ****************/
+.clearfix {
+    clear: both;
+}
 
+/* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
+
     .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
     }
 
     header {
@@ -246,4 +249,3 @@ a.social:hover {
     }
 
 }
-
